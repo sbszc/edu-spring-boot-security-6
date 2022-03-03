@@ -1,7 +1,7 @@
-package com.sbszc.springbootsecuritytutorial.security;
+package com.sbszc.eduspringbootsecurity.security;
 
-import com.sbszc.springbootsecuritytutorial.entity.UserAuth;
-import com.sbszc.springbootsecuritytutorial.repository.UserAuthRepository;
+import com.sbszc.eduspringbootsecurity.entity.UserAuth;
+import com.sbszc.eduspringbootsecurity.repository.UserAuthRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

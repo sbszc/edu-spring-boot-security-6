@@ -1,4 +1,4 @@
-package com.sbszc.springbootsecuritytutorial.security;
+package com.sbszc.eduspringbootsecurity.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

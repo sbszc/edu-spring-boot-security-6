@@ -1,4 +1,4 @@
-package com.sbszc.springbootsecuritytutorial.entity;
+package com.sbszc.eduspringbootsecurity.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

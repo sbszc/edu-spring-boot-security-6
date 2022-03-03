@@ -1,4 +1,4 @@
-package com.sbszc.springbootsecuritytutorial.controller;
+package com.sbszc.eduspringbootsecurity.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,6 +1,6 @@
-package com.sbszc.springbootsecuritytutorial.repository;
+package com.sbszc.eduspringbootsecurity.repository;
 
-import com.sbszc.springbootsecuritytutorial.entity.UserAuth;
+import com.sbszc.eduspringbootsecurity.entity.UserAuth;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
