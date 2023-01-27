@@ -1,19 +1,20 @@
 package com.sbszc.eduspringbootsecurity.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class UserAuthController {
 
-    @GetMapping("find")
-    public String find() {
-        return "find";
+    @PostMapping("write")
+    public String write() {
+        return "write";
     }
 
-    @GetMapping("save")
-    public String save() {
-        return "save";
+    @GetMapping("read")
+    public String read() {
+        return "read";
     }
 
     @GetMapping("ping")

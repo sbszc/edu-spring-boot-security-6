@@ -1,6 +1,5 @@
 package com.sbszc.eduspringbootsecurity.entity;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -10,10 +9,10 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import java.util.List;
 
-@Entity
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
+
+@Entity
 public class UserAuth {
 
     @Id

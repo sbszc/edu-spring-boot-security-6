@@ -1,6 +1,5 @@
 package com.sbszc.eduspringbootsecurity.entity;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -10,14 +9,14 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import java.util.List;
 
-@Entity
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
+
+@Entity
 public class UserRole {
 
     @Id
-    String roleName;
+    private String roleName;
 
     @ManyToMany(fetch = FetchType.EAGER)
     private List<UserPermission> permissions;
