@@ -6,14 +6,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.7</version>
+        <version>3.0.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>com.sbszc</groupId>
-    <artifactId>edu-spring-boot-security</artifactId>
+    <artifactId>edu-spring-boot-security-6</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>edu-spring-boot-security</name>
+    <name>edu-spring-boot-security-6</name>
     <description>Educational project for spring boot security</description>
 
     <properties>

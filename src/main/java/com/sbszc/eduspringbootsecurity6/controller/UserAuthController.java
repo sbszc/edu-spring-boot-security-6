@@ -1,4 +1,4 @@
-package com.sbszc.eduspringbootsecurity.controller;
+package com.sbszc.eduspringbootsecurity6.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

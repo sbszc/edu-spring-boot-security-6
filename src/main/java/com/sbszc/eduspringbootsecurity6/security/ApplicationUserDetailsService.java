@@ -1,14 +1,10 @@
-package com.sbszc.eduspringbootsecurity.security;
+package com.sbszc.eduspringbootsecurity6.security;
 
-import com.sbszc.eduspringbootsecurity.entity.UserAuth;
-import com.sbszc.eduspringbootsecurity.repository.UserAuthRepository;
-import lombok.extern.slf4j.Slf4j;
+import com.sbszc.eduspringbootsecurity6.repository.UserAuthRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-
-@Slf4j
 
 @Service
 public class ApplicationUserDetailsService implements UserDetailsService {
@@ -21,7 +17,8 @@ public class ApplicationUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        UserAuth userAuth = userAuthRepository.findById(username).get();
-        return new ApplicationUserDetails(userAuth);
+        return userAuthRepository.findById(username)
+                .map(ApplicationUserDetails::new)
+                .orElseThrow(() -> new UsernameNotFoundException(String.format("username:'%s' not found", username)));
     }
 }

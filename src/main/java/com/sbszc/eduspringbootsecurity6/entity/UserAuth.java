@@ -1,12 +1,12 @@
-package com.sbszc.eduspringbootsecurity.entity;
+package com.sbszc.eduspringbootsecurity6.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 import java.util.List;
 
 @Data
