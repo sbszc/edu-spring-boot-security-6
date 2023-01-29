@@ -1,17 +1,15 @@
 package com.sbszc.eduspringbootsecurity6.security;
 
 import com.sbszc.eduspringbootsecurity6.entity.UserAuth;
-import lombok.ToString;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.stream.Collectors;
 
-@Slf4j
-@ToString
 public class ApplicationUserDetails implements UserDetails {
 
     private final UserAuth userAuth;

@@ -33,11 +33,13 @@ public class SecurityConfig /*extends WebSecurityConfigurerAdapter CHANGES ON SE
 //    public UserDetailsService userDetailsService(PasswordEncoder passwordEncoder) {
 //        UserDetails user = User.withUsername("user")
 //                .password(passwordEncoder.encode("password"))
-//                .roles("READ_ONLY")
+////                .roles("READ_ONLY")
+//                .authorities("read")
 //                .build();
 //        UserDetails admin = User.withUsername("admin")
 //                .password(passwordEncoder.encode("password"))
-//                .roles("ADMIN")
+////                .roles("ADMIN")
+//                .authorities("read", "write")
 //                .build();
 //        return new InMemoryUserDetailsManager(user, admin);
 //    }
