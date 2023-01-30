@@ -53,8 +53,8 @@ public class SecurityConfig /*extends WebSecurityConfigurerAdapter CHANGES ON SE
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http
                 .csrf().disable()
-//                .headers().frameOptions().disable().and()
                 .httpBasic().and()
+//                .headers().frameOptions().disable().and()
 //                .formLogin().and()
                 /*.authorizeRequests()*/
                 /*.antMatchers()*/
